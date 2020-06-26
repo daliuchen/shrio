@@ -61,3 +61,15 @@ JWT
             }
         ```
         
+   然后在配置一下那些url需要拦截就好了
+   ```java
+@Configuration
+public class SystemConfig extends WebMvcConfigurationSupport {
+    @Autowired
+    private JwtInterceptor jwtInterceptor;
+@Override
+public void addInterceptors(InterceptorRegistry registry) { registry.addInterceptor(jwtInterceptor).
+addPathPatterns("/**"). excludePathPatterns("/frame/login","/frame/register/**"); //设置不拦截的请求地址
+} }
+```
+        
