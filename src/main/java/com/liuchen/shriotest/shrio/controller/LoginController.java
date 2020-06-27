@@ -1,6 +1,5 @@
 package com.liuchen.shriotest.shrio.controller;
 
-import cn.hutool.core.util.ObjectUtil;
 import com.liuchen.shriotest.shrio.entity.*;
 import com.liuchen.shriotest.shrio.mapper.SysAuthDao;
 import com.liuchen.shriotest.shrio.mapper.SysRoleAuthDao;
@@ -11,9 +10,7 @@ import com.liuchen.shriotest.shrio.util.TokenStringUtil;
 import org.apache.logging.log4j.util.Strings;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import sun.security.provider.MD5;
 
-import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;

@@ -46,5 +46,7 @@ public class AuthIntercept extends HandlerInterceptorAdapter {
 
         //如果有就放行。
         //没有就报错，全局处理异常。ok
+        return true;
     }
+
 }

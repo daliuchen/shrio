@@ -1,4 +1,4 @@
-package com.liuchen.shriotest.shrio.mapper;
+package com.liuchen.springBoot.mapper;
 
 import com.liuchen.shriotest.shrio.entity.SysRole;
 import org.springframework.stereotype.Repository;
@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface SysRoleDao {
+public interface SysRoleDao1 {
     int deleteByPrimaryKey(Integer id);
 
     int insert(SysRole record);
