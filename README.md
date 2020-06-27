@@ -72,4 +72,13 @@ public void addInterceptors(InterceptorRegistry registry) { registry.addIntercep
 addPathPatterns("/**"). excludePathPatterns("/frame/login","/frame/register/**"); //设置不拦截的请求地址
 } }
 ```
+
+
+
+上面的jwt
+<hr>
+下面的是shiro
+
+关于shiro的详细   [第一篇](https://blog.csdn.net/daliucheng/article/details/106968376)
+                [第二篇](https://blog.csdn.net/daliucheng/article/details/106984094)
         
